@@ -30,3 +30,13 @@ with open("new.txt","w") as file:#add a w to write from file
   file.write("Now this is how i write a file")#this overwrites
 
 
+with open("file.txt","a") as file:#add a w to write from file
+
+  file.write("Now this is how i write a file without overwriting")#this does not overwrite
+  #also notice the newline used
+
+  
+with open("file.txt","r+") as file:#opens a file and automatically closes it when its done
+  print(file.read())
+  file.write("\nReading and wrting from a file")#read and write from a file . If cursor is not movedd to the end, then it overwrites
+ 
